@@ -32,7 +32,7 @@ function getWeather(city){
            var fah = (9/5)*(kelvin - 273) + 32;
            var celc = kelvin-273;
            
-           $('#location').text(city);
+           $('#location').text(r.name+", " + r.sys.country);
            $('#temp').text(kelvin+"°K" + " | " + fah + "°F" + " | " + celc + "°C");
            
            /*determining if sunny/cloudy*/
